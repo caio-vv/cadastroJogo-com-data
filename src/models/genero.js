@@ -12,8 +12,8 @@ const model = (body, id = nextId++) => {
         return {
             id,
             nome: body.nome,
-            criado_em: new Date(body.criado_em),
-            atualizado_em: new Date(body.atualizado_em)
+            criado_em: body.criado_em || new Date(),
+            atualizado_em: new Date(),
         }
     }
 }
