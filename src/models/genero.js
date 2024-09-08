@@ -3,11 +3,7 @@ let nextId = 1
 const model = (body, id = nextId++) => {
 
     if (body.nome != undefined &&
-        body.criado_em != undefined &&
-        body.nome != " " &&
-        body.criado_em != "" &&
-        body.atualizado_em != "" &&
-        body.atualizado_em != undefined
+        body.nome != ""
     ) {
         return {
             id,
